@@ -1,0 +1,33 @@
+*{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+    padding: 8px;
+    margin: 0;
+    color: aliceblue;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+}
+.box-maior{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    
+}
+
+.titulo-forms{
+    display: flex;
+    justify-content: center;
+}
+option{
+    color: black;
+}
+hr{
+    margin: 0;
+}
