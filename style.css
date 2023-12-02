@@ -1,31 +1,44 @@
-*{
+* {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     box-sizing: border-box;
     padding: 8px;
     margin: 0;
     color: aliceblue;
 }
-body{
-    height: 100vh;
-    width: 100vw;
+
+body {
+    height: 100%;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
-    
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    margin: 0; 
 }
-.box-login-senha{
+
+.box-login-senha {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px; /* Defina a largura desejada */
+    max-width: 100%; /* Garante que a largura não ultrapasse 100% do contêiner pai */
+    padding: 20px; /* Adicione algum espaçamento interno */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Adicione uma sombra para destacar a caixa */
     border-radius: 7px;
 }
-.botao-input-senha{
+
+.botao-input-senha {
     display: flex;
     justify-content: center;
     flex-direction: row;
 }
-.botao-input{
-    color: aliceblue;
+
+.botao-input {
+    color: #ffffff;
 }
-.texto-portal{
+
+.texto-portal {
     margin-bottom: 10px;
 }
+
