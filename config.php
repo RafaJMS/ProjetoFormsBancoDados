@@ -1,10 +1,10 @@
 <?php
 
-$Dbserver = 'local-host';
+$Dbserver = 'localhost';
 $Dbusername = 'root';
 $Dbpassword = '';
 $Dbname = 'DbForms';
 
-$conexao = new mysqli($Dbserver, $Dbusername, $Dbpassword, $Dbname);
+$conexao = new mysqli($Dbserver,$Dbusername,$Dbpassword,$Dbname);
 
 ?>

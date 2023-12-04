@@ -1,3 +1,35 @@
+<?php
+
+if(isset($_POST["submit"])){
+
+    include_once("config.php");
+
+    $nome = $_POST['nome'];
+    $email = $_POST['email'];
+    $telefone = $_POST['telefone'];
+    $cep = $_POST['cep'];
+    $estado = $_POST['estado'];
+    $endereco = $_POST['endereco'];
+    $cidade = $_POST['cidade'];
+    $data_nascimento = $_POST['data-nascimento'];
+    $escolaridade = $_POST['escolaridade'];
+    $instituicao_anterior = $_POST['instituicao-anterior'];
+
+    $dados = mysqli_query($conexao,"INSERT INTO usuario(nome,telefone,cep,logradouro,cidade,estado,
+    data_nascimento,email,escolaridade,instituicao_anterior) 
+    VALUES ('$nome','$telefone','$cep','$endereco','$cidade','$estado',
+    '$data_nascimento','$email','$escolaridade','$instituicao_anterior')");
+
+}
+
+
+
+
+
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -57,7 +89,7 @@
                         <option>Ensino Superior</option>
                     </select>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 mb-3">
                     <label class="form-label">Instituição Anterior</label>
                     <input type="text" name="instituicao-anterior" class="form-control" id="inputPassword4">
                 </div>
